@@ -2,7 +2,7 @@
   "name": "portfolio-react",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mani1183.github.io/mani1183-react/",
+  "homepage": "https://mani1183.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
