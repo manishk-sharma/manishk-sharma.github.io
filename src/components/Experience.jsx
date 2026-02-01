@@ -4,11 +4,11 @@ export default function Experience() {
   const [view, setView] = useState("exp");
 
   return (
-    <section id="experience" className="py-20 px-4 bg-gray-900">
+    <section id="experience" className="py-20 px-4 experience-section">
       <h2 className="section-title text-center">Experience</h2>
 
       <div className="flex justify-center mb-12">
-        <div className="bg-gray-800/50 p-1 rounded-xl inline-flex border border-gray-700">
+        <div className="toggle-container p-1 rounded-xl inline-flex border border-gray-700">
           <button
             onClick={() => setView("exp")}
             className={`toggle-btn ${view === "exp" ? "active" : ""}`}

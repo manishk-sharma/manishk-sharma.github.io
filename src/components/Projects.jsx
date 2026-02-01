@@ -28,9 +28,12 @@ export default function Projects() {
         )}
 
         {repos.map((repo) => (
-          <div
+          <a
             key={repo.id}
-            className="card-bg rounded-2xl p-8 flex flex-col justify-between group"
+            href={repo.html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-bg rounded-2xl p-8 flex flex-col justify-between group transition-all hover:-translate-y-2"
           >
             <div>
               <div className="flex justify-between items-start mb-4">
@@ -39,12 +42,10 @@ export default function Projects() {
                   class="text-3xl text-[var(--accent)]"
                 ></ion-icon>
                 <div className="flex gap-3">
-                  <a href={repo.html_url} target="_blank">
-                    <ion-icon
-                      name="logo-github"
-                      class="text-xl hover:text-white transition"
-                    ></ion-icon>
-                  </a>
+                  <ion-icon
+                    name="logo-github"
+                    class="text-xl group-hover:text-white transition"
+                  ></ion-icon>
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-[var(--accent)] transition">
@@ -61,7 +62,7 @@ export default function Projects() {
               </span>
               <span>⭐ {repo.stargazers_count}</span>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
