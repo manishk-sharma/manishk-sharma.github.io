@@ -22,7 +22,7 @@ export default function App() {
   useEffect(() => {
     const handleLoad = () => setLoaded(true);
     if (document.readyState === "complete") {
-      setLoaded(true);
+      setTimeout(() => setLoaded(true), 0);
     } else {
       window.addEventListener("load", handleLoad);
     }
@@ -57,8 +57,8 @@ export default function App() {
   return (
     <div
       className={`${isDark
-          ? "bg-gray-900 text-gray-100"
-          : "bg-gray-50 text-gray-900" // Fallback classes mostly handled by CSS .light override
+        ? "bg-gray-900 text-gray-100"
+        : "bg-gray-50 text-gray-900" // Fallback classes mostly handled by CSS .light override
         } transition-colors duration-300 antialiased font-sans min-h-screen`}
     >
       <div id="page-loader" className={`${loaded ? "hidden" : ""}`}>
