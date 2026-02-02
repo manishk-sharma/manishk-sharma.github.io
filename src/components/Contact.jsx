@@ -69,8 +69,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-gray-400 text-base mb-1">Phone</p>
-                    <a href="tel:+919990830656" className="text-lg font-semibold hover:text-blue-500 transition-colors">
-                      +91 9990830656
+                    <a href="tel:+91 XXXXXXXXXX" className="text-lg font-semibold hover:text-blue-500 transition-colors">
+                      +91 XXXXXXXXXX
                     </a>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ export default function Contact() {
                   <ion-icon name="mail-outline"></ion-icon>
                   Send me an email
                 </a>
-                <a href="tel:+919990830656" className="w-full py-3 rounded-xl flex items-center justify-center gap-2 border border-white/10 text-white hover:bg-white/5 transition-colors text-lg font-medium">
+                <a href="tel:+91XXXXXXXXXX" className="w-full py-3 rounded-xl flex items-center justify-center gap-2 border border-white/10 text-white hover:bg-white/5 transition-colors text-lg font-medium">
                   <ion-icon name="call-outline"></ion-icon>
                   Give me a call
                 </a>
@@ -144,7 +144,7 @@ export default function Contact() {
               <p className="text-gray-400 text-base mb-6">
                 Download my resume to see my complete work history and projects.
               </p>
-              <a href="https://drive.google.com/file/d/137eb8_mXe0suKd8f-8gqL5CeeYRgXjkl/view?usp=sharing"
+              <a href="https://drive.google.com/file/d/1vT6zLIO6hPicoaU38VU3oxBbqu1bbL1M/view?usp=sharing"
                 target="_blank" download className="w-full py-3 rounded-xl flex items-center justify-center gap-2 border border-white/10 text-white hover:bg-white/5 transition-colors bg-blue-700 hover:bg-blue-800">
                 <ion-icon name="download-outline"></ion-icon>
                 Download Resume
