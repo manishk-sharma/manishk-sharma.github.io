@@ -5,7 +5,7 @@ export default function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/manishk-sharma/repos?sort=updated&per_page=6")
+    fetch("https://api.github.com/users/manishk-sharma/repos?sort=updated")
       .then((res) => res.json())
       .then((data) => {
         setRepos(data.filter((r) => !r.fork).slice(0, 4));
