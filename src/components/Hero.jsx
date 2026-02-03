@@ -31,7 +31,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 max-w-sm mx-auto md:mx-0">
           <a
-            href="https://github.com/mani1183"
+            href="https://github.com/manishk-sharma"
             target="_blank"
             className="btn-primary btn-github px-5 py-3 rounded-lg flex items-center justify-center gap-3 transition"
           >
