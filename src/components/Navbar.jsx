@@ -22,7 +22,7 @@ export default function Navbar({ toggleTheme, isDark }) {
             alt="Manish Sharma"
             className="w-10 h-10 inline-block mr-2 align-middle"
           />
-          Manish Sharma
+          Manish Kumar Sharma
         </a>
 
         <div className="hidden md:flex items-center gap-6">
