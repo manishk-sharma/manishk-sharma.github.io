@@ -18,7 +18,7 @@ export default function Hero() {
       {/* RIGHT SIDE */}
       <div className="md:w-1/2 space-y-6 text-center md:text-left">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold typewriter">
-          Hi, I'm <span className="gradient-text">Manish Sharma</span>
+          Hi, I'm <span className="gradient-text">Manish Kumar Sharma</span>
         </h1>
 
         <p className="text-xl sm:text-2xl md:text-3xl font-extrabold text-gray-400">
