@@ -1,4 +1,4 @@
-# Manish Sharma - Portfolio 2.0
+# Manish Kumar Sharma - Portfolio
 
 A premium, high-performance portfolio website built with **React**, **Vite**, and **Tailwind CSS**. 
 Refactored from a static HTML template to a component-based architecture with a modern "Midnight & Neon" aesthetic.
