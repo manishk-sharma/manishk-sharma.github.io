@@ -32,6 +32,9 @@ export default function Navbar({ toggleTheme, isDark }) {
           <a href="#about" className="px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-white/10 transition-all">
             About
           </a>
+          <a href="#experience" className="px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-white/10 transition-all">
+            Experience
+          </a>
           <a href="#projects" className="px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-white/10 transition-all">
             Projects
           </a>
@@ -71,6 +74,9 @@ export default function Navbar({ toggleTheme, isDark }) {
         </a>
         <a href="#about" className="block py-2" onClick={() => setOpen(false)}>
           About
+        </a>
+        <a href="#experience" className="block py-2" onClick={() => setOpen(false)}>
+          Experience
         </a>
         <a href="#projects" className="block py-2" onClick={() => setOpen(false)}>
           Projects
