@@ -45,12 +45,12 @@ export default function About() {
         {/* Stats Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="card-bg p-8 rounded-3xl flex flex-col items-center justify-center text-center hover:scale-[1.02] transition-transform border border-white/5 hover:border-blue-500/30">
-            <h4 className="text-5xl font-bold text-blue-500 mb-2">3+</h4>
+            <h4 className="text-5xl font-bold text-blue-500 mb-2">6+</h4>
             <p className="text-gray-400 font-medium text-lg">Months Experience</p>
           </div>
 
           <div className="card-bg p-8 rounded-3xl flex flex-col items-center justify-center text-center hover:scale-[1.02] transition-transform border border-white/5 hover:border-blue-500/30">
-            <h4 className="text-5xl font-bold text-blue-500 mb-2">5+</h4>
+            <h4 className="text-5xl font-bold text-blue-500 mb-2">6+</h4>
             <p className="text-gray-400 font-medium text-lg">Projects Completed</p>
           </div>
         </div>
