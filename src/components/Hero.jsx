@@ -39,7 +39,7 @@ export default function Hero() {
             <span id="github-stats">GitHub</span>
           </a>
           <a
-            href="https://linkedin.com/in/sharmanish11"
+            href="https://linkedin.com/in/manishk-sharma"
             target="_blank"
             className="btn-primary px-5 py-3 rounded-lg flex items-center justify-center gap-3 transition"
           >
