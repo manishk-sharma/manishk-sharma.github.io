@@ -82,7 +82,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-gray-400 text-base mb-1">Location</p>
-                    <p className="text-lg font-semibold">Rohini, New Delhi</p>
+                    <p className="text-lg font-semibold">MubarakPur Dabas, North West Delhi, New Delhi</p>
                   </div>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function Contact() {
               <p className="text-gray-400 text-base mb-6">
                 Download my resume to see my complete work history and projects.
               </p>
-              <a href="https://drive.google.com/file/d/1vA9y8oSKX_vob0FpwXPxl-z46zR5XjCS/view?usp=sharing"
+              <a href="https://drive.google.com/file/d/1MBZMaWCAWGA60b41k8qeK3-T93aTEoOl/view?usp=sharing"
                 target="_blank" download className="w-full py-3 rounded-xl flex items-center justify-center gap-2 border border-white/10 text-white hover:bg-white/5 transition-colors bg-blue-700 hover:bg-blue-800">
                 <ion-icon name="download-outline"></ion-icon>
                 Download Resume
