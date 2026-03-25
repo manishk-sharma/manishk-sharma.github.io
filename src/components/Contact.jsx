@@ -93,7 +93,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold mb-6">Follow Me</h3>
               <div className="flex gap-4">
                 <div className="flex flex-row justify-center items-center gap-4">
-                  <a href="https://linkedin.com/in/sharmanish11" target="_blank" className="social-bubble">
+                  <a href="https://linkedin.com/in/manishk-sharma" target="_blank" className="social-bubble">
                     <ion-icon name="logo-linkedin"></ion-icon>
                   </a>
                   <a href="https://github.com/manishk-sharma" target="_blank" className="social-bubble">
@@ -102,7 +102,7 @@ export default function Contact() {
                   <a href="https://www.instagram.com/_.manisharma/" target="_blank" className="social-bubble">
                     <ion-icon name="logo-instagram"></ion-icon>
                   </a>
-                  <a href="https://x.com/Manish_118" target="_blank" className="social-bubble">
+                  <a href="https://x.com/manishk_sharma1" target="_blank" className="social-bubble">
                     <ion-icon name="logo-twitter"></ion-icon>
                   </a>
                 </div>
