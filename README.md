@@ -79,4 +79,4 @@ src/
 *   **Content**: Edit individual components in `src/components/` to update text and links.
 
 ---
-© 2026 Manish Sharma. All rights reserved.
+© 2026 Manish Kumar Sharma. All rights reserved.
