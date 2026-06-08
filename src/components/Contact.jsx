@@ -28,13 +28,12 @@ export default function Contact() {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           setSuccess(true);
           e.target.reset();
         },
         (error) => {
-          console.log(error.text);
+          console.error("EmailJS error:", error);
           alert("Failed to send message. Please try again.");
         }
       );
