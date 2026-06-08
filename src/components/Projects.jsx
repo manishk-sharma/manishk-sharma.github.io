@@ -85,7 +85,16 @@ export default function Projects() {
     fetch("https://api.github.com/users/manishk-sharma/repos?sort=updated")
       .then((res) => res.json())
       .then((data) => {
-        if (Array.isArray(data)) setRepos(data.filter((r) => !r.fork));
+        if (Array.isArray(data)) {
+            const filtered = data.filter((r) => !r.fork);
+            // Sort: repos with a live link (homepage) first, rest after
+            filtered.sort((a, b) => {
+              const aHasLink = a.homepage && a.homepage.trim() !== "" ? 1 : 0;
+              const bHasLink = b.homepage && b.homepage.trim() !== "" ? 1 : 0;
+              return bHasLink - aHasLink;
+            });
+            setRepos(filtered);
+          }
         setLoading(false);
       })
       .catch(() => setLoading(false));
