@@ -1,9 +1,20 @@
 import emailjs from "@emailjs/browser";
 import { useState, useRef } from "react";
+import {
+  FiMail,
+  FiPhone,
+  FiMapPin,
+  FiDownload
+} from "react-icons/fi";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaInstagram
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Contact() {
   const [success, setSuccess] = useState(false);
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -30,33 +41,31 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-gray-800/30">
+    <section id="contact" className="py-20 px-4 bg-gray-50/30 dark:bg-slate-950/10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="section-title text-center mb-4">
-          Let's <span className="text-blue-500">Connect</span>
+        <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-4 text-center text-slate-900 dark:text-white leading-[1.1]">
+          Let's <span className="text-brand">Connect</span>
         </h2>
-        <p className="text-center text-gray-400 mb-16 text-lg">
+        <p className="text-center text-slate-500 dark:text-slate-400 mb-16 text-lg font-medium">
           I'm always interested in new opportunities and collaborations. Let's discuss how we can work together!
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-
           {/* Left Column */}
           <div className="space-y-6">
-
             {/* Get In Touch Card */}
-            <div className="card-bg p-8 rounded-3xl border border-white/5">
-              <h3 className="text-2xl font-bold mb-8">Get In Touch</h3>
+            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-none transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-8 text-slate-900 dark:text-white">Get In Touch</h3>
 
               <div className="space-y-6">
                 {/* Email Item */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center text-violet-400 shrink-0">
-                    <ion-icon name="mail-outline" style={{ fontSize: '24px' }}></ion-icon>
+                  <div className="w-12 h-12 rounded-xl bg-violet-500/10 flex items-center justify-center text-violet-600 dark:text-violet-400 shrink-0">
+                    <FiMail className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-gray-400 text-base mb-1">Email</p>
-                    <a href="mailto:manish1182003@gmail.com" className="text-lg font-semibold hover:text-blue-500 transition-colors">
+                    <p className="text-slate-500 dark:text-slate-400 text-sm font-semibold mb-1">Email</p>
+                    <a href="mailto:manish1182003@gmail.com" className="text-lg font-bold text-slate-800 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                       manish1182003@gmail.com
                     </a>
                   </div>
@@ -64,12 +73,12 @@ export default function Contact() {
 
                 {/* Phone Item */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 shrink-0">
-                    <ion-icon name="call-outline" style={{ fontSize: '24px' }}></ion-icon>
+                  <div className="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-600 dark:text-cyan-400 shrink-0">
+                    <FiPhone className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-gray-400 text-base mb-1">Phone</p>
-                    <a href="tel:+91 9990830656" className="text-lg font-semibold hover:text-blue-500 transition-colors">
+                    <p className="text-slate-500 dark:text-slate-400 text-sm font-semibold mb-1">Phone</p>
+                    <a href="tel:+91 9990830656" className="text-lg font-bold text-slate-800 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                       +91 9990830656
                     </a>
                   </div>
@@ -77,108 +86,102 @@ export default function Contact() {
 
                 {/* Location Item */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400 shrink-0">
-                    <ion-icon name="location-outline" style={{ fontSize: '24px' }}></ion-icon>
+                  <div className="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-600 dark:text-pink-400 shrink-0">
+                    <FiMapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-gray-400 text-base mb-1">Location</p>
-                    <p className="text-lg font-semibold">MubarakPur Dabas, North West Delhi, New Delhi</p>
+                    <p className="text-slate-500 dark:text-slate-400 text-sm font-semibold mb-1">Location</p>
+                    <p className="text-lg font-bold text-slate-800 dark:text-slate-200">MubarakPur Dabas, North West Delhi, New Delhi</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Follow Me Card */}
-            <div className="card-bg p-8 rounded-3xl border border-white/5">
-              <h3 className="text-2xl font-bold mb-6">Follow Me</h3>
+            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-none transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Follow Me</h3>
               <div className="flex gap-4">
-                <div className="flex flex-row justify-center items-center gap-4">
-                  <a href="https://linkedin.com/in/manishk-sharma" target="_blank" className="social-bubble">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </a>
-                  <a href="https://github.com/manishk-sharma" target="_blank" className="social-bubble">
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                  <a href="https://www.instagram.com/_.manisharma/" target="_blank" className="social-bubble">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                  </a>
-                  <a href="https://x.com/manishk_sharma1" target="_blank" className="social-bubble">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </div>
+                <a href="https://linkedin.com/in/manishk-sharma" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-600 dark:text-slate-400 hover:text-white hover:bg-blue-600 dark:hover:bg-blue-500 hover:border-transparent dark:hover:border-transparent shadow-sm transition-all duration-300 hover:-translate-y-1">
+                  <FaLinkedin className="text-xl" />
+                </a>
+                <a href="https://github.com/manishk-sharma" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-600 dark:text-slate-400 hover:text-white hover:bg-slate-900 dark:hover:bg-slate-700 hover:border-transparent dark:hover:border-transparent shadow-sm transition-all duration-300 hover:-translate-y-1">
+                  <FaGithub className="text-xl" />
+                </a>
+                <a href="https://www.instagram.com/_.manisharma/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-600 dark:text-slate-400 hover:text-white hover:bg-pink-600 dark:hover:bg-pink-500 hover:border-transparent dark:hover:border-transparent shadow-sm transition-all duration-300 hover:-translate-y-1">
+                  <FaInstagram className="text-xl" />
+                </a>
+                <a href="https://x.com/manishk_sharma1" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-600 dark:text-slate-400 hover:text-white hover:bg-slate-900 dark:hover:bg-slate-700 hover:border-transparent dark:hover:border-transparent shadow-sm transition-all duration-300 hover:-translate-y-1">
+                  <FaXTwitter className="text-xl" />
+                </a>
               </div>
             </div>
-
           </div>
 
           {/* Right Column */}
           <div className="space-y-6">
-
             {/* Ready to collaborate Card */}
-            <div className="card-bg p-8 rounded-3xl border border-white/5 text-center">
-              <div className="w-20 h-20 mx-auto bg-gradient-to-br from-violet-500 to-blue-500 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20">
-                <ion-icon name="mail-open-outline" style={{ fontSize: '32px', color: 'white' }}></ion-icon>
+            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-none transition-all duration-300 text-center">
+              <div className="w-20 h-20 mx-auto bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20">
+                <FiMail className="w-10 h-10 text-white" />
               </div>
 
-              <h3 className="text-2xl font-bold mb-4">Ready to collaborate?</h3>
-              <p className="text-gray-400 mb-8 leading-relaxed text-lg">
+              <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Ready to collaborate?</h3>
+              <p className="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed text-base font-medium">
                 Whether you have a project in mind or just want to chat about technology,
                 I'd love to hear from you. Let's build something amazing together!
               </p>
 
               <div className="space-y-3">
-                <a href="mailto:manish1182003@gmail.com" className="w-full btn-primary py-3 rounded-xl flex items-center justify-center gap-2 group text-lg font-medium">
-                  <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:manish1182003@gmail.com" className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold flex items-center justify-center gap-2 group text-base transition-all shadow-md shadow-blue-600/10 hover:-translate-y-0.5">
+                  <FiMail className="w-5 h-5" />
                   Send me an email
                 </a>
-                <a href="tel:+919990830656" className="w-full py-3 rounded-xl flex items-center justify-center gap-2 border border-white/10 text-white hover:bg-white/5 transition-colors text-lg font-medium">
-                  <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:+919990830656" className="w-full py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 font-semibold flex items-center justify-center gap-2 transition-all hover:-translate-y-0.5">
+                  <FiPhone className="w-5 h-5" />
                   Give me a call
                 </a>
               </div>
             </div>
 
             {/* Resume Card */}
-            <div className="card-bg p-8 rounded-3xl border border-white/5 text-center">
-              <h3 className="text-xl font-bold mb-2">Want to know more?</h3>
-              <p className="text-gray-400 text-base mb-6">
+            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-none transition-all duration-300 text-center">
+              <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">Want to know more?</h3>
+              <p className="text-slate-500 dark:text-slate-400 text-sm font-medium mb-6">
                 Download my resume to see my complete work history and projects.
               </p>
-              <a href="https://drive.google.com/file/d/1MBZMaWCAWGA60b41k8qeK3-T93aTEoOl/view?usp=sharing"
-                target="_blank" download className="w-full py-3 rounded-xl flex items-center justify-center gap-2 border border-white/10 text-white hover:bg-white/5 transition-colors bg-blue-700 hover:bg-blue-800">
-                <ion-icon name="download-outline"></ion-icon>
+              <a href="https://drive.google.com/file/d/1X3pg_oPzbf4ByCET7bqzXDCypy7G9Zsf"
+                target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-600/10 hover:-translate-y-0.5">
+                <FiDownload className="w-5 h-5" />
                 Download Resume
               </a>
             </div>
-
           </div>
-
         </div>
 
         {/* Existing Form Section */}
-        <div id="get-in-touch" className="max-w-3xl mx-auto">
+        <div id="get-in-touch" className="max-w-3xl mx-auto mt-16">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold">Send a Message Directly</h3>
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Send a Message Directly</h3>
           </div>
 
-          <div className="card-bg p-8 rounded-3xl shadow-xl border border-white/5">
+          <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 transition-all duration-300">
             <form ref={form} id="contact-form" className="space-y-6" onSubmit={sendEmail}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-400 ml-1">Your Name</label>
+                  <label className="text-sm font-semibold text-slate-500 dark:text-slate-400 ml-1">Your Name</label>
                   <input
                     name="name"
-                    className="input"
+                    className="w-full px-5 py-4 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 dark:focus:ring-blue-500/10 transition-all duration-300"
                     placeholder="Your Name"
                     required
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-400 ml-1">Your Email</label>
+                  <label className="text-sm font-semibold text-slate-500 dark:text-slate-400 ml-1">Your Email</label>
                   <input
                     name="email"
                     type="email"
-                    className="input"
+                    className="w-full px-5 py-4 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 dark:focus:ring-blue-500/10 transition-all duration-300"
                     placeholder="your@example.com"
                     required
                   />
@@ -186,10 +189,10 @@ export default function Contact() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-400 ml-1">Your Message</label>
+                <label className="text-sm font-semibold text-slate-500 dark:text-slate-400 ml-1">Your Message</label>
                 <textarea
                   name="message"
-                  className="input min-h-[150px]"
+                  className="w-full px-5 py-4 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 dark:focus:ring-blue-500/10 transition-all duration-300 min-h-[150px]"
                   placeholder="Hi, I'd like to discuss a project..."
                   required
                 ></textarea>
@@ -197,7 +200,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="btn-primary w-full text-white font-bold py-4 text-lg"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 text-lg rounded-xl shadow-lg shadow-blue-600/20 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
               >
                 Send Message
               </button>
@@ -205,13 +208,12 @@ export default function Contact() {
             <p
               id="form-success"
               className={`${success ? "block" : "hidden"
-                } text-green-400 text-center mt-4 font-semibold`}
+                } text-green-500 text-center mt-4 font-semibold`}
             >
               Thank you! Your message has been sent successfully!
             </p>
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -11,12 +11,31 @@ import { useEffect, useState } from "react";
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(
+    window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  );
+
+  // Sync theme class and system theme changes
+  useEffect(() => {
+    if (!isDark) {
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.remove("light");
+      document.documentElement.classList.add("dark");
+    }
+  }, [isDark]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e) => setIsDark(e.matches);
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
 
   // Theme Toggle Logic
   const toggleTheme = () => {
     setIsDark(!isDark);
-    document.documentElement.classList.toggle("light");
   };
 
   useEffect(() => {
@@ -57,8 +76,8 @@ export default function App() {
   return (
     <div
       className={`${isDark
-        ? "bg-gray-900 text-gray-100"
-        : "bg-gray-50 text-gray-900" // Fallback classes mostly handled by CSS .light override
+        ? "text-gray-100"
+        : "text-gray-900"
         } transition-colors duration-300 antialiased font-sans min-h-screen`}
     >
       <div id="page-loader" className={`${loaded ? "hidden" : ""}`}>
@@ -68,11 +87,11 @@ export default function App() {
       <Navbar toggleTheme={toggleTheme} isDark={isDark} />
       <Hero />
       <About />
-      <Experience />      
-      <Projects /> 
-      <Skills />     
+      <Experience />
+      <Projects />
+      <Skills />
       <Contact />
-      <Footer />
+      <Footer isDark={isDark} />
     </div>
   );
 }

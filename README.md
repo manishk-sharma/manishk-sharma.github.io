@@ -1,4 +1,4 @@
-# Manish Kumar Sharma - Portfolio
+# Manish Sharma - Portfolio
 
 A premium, high-performance portfolio website built with **React**, **Vite**, and **Tailwind CSS**. 
 Refactored from a static HTML template to a component-based architecture with a modern "Midnight & Neon" aesthetic.
@@ -79,4 +79,4 @@ src/
 *   **Content**: Edit individual components in `src/components/` to update text and links.
 
 ---
-© 2026 Manish Kumar Sharma. All rights reserved.
+© 2026 Manish Sharma. All rights reserved.
