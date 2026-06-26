@@ -150,7 +150,7 @@ export default function Footer({ isDark }) {
             </h4>
             <div className="space-y-3">
               <a
-                href="https://drive.google.com/file/d/1X3pg_oPzbf4ByCET7bqzXDCypy7G9Zsf"
+                href="https://drive.google.com/file/d/1q1zHvW4TPPn-ET75y_NRJdlKqQWwje-B"
                 className="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-white/10 hover:border-slate-400 dark:hover:border-white/30 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-white/5 transition-all group"
               >
                 <span className="flex items-center gap-2">
