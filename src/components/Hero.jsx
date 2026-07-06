@@ -5,10 +5,10 @@ import { FiArrowRight } from "react-icons/fi";
 // ─── Typewriter Component ─────────────────────────────────────────────────────
 function Typewriter({ texts = [], typingSpeed = 75, deletingSpeed = 40, pauseMs = 2000 }) {
   const [displayed, setDisplayed] = useState("");
-  const [textIdx, setTextIdx]     = useState(0);
-  const [charIdx, setCharIdx]     = useState(0);
-  const [deleting, setDeleting]   = useState(false);
-  const [cursor, setCursor]       = useState(true);
+  const [textIdx, setTextIdx] = useState(0);
+  const [charIdx, setCharIdx] = useState(0);
+  const [deleting, setDeleting] = useState(false);
+  const [cursor, setCursor] = useState(true);
 
   // Typing / deleting logic
   useEffect(() => {
@@ -99,9 +99,9 @@ export default function Hero() {
         <p className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mb-6 animate-fade-in-up animate-delay-300 min-h-[2rem]">
           <Typewriter
             texts={[
-              "Full Stack Web Developer",
-              "React.js Enthusiast",
-              "MERN Stack Developer",
+              "Web Developer",
+              "Tech Enthusiast",
+              "Full Stack Developer",
               "UI / UX Focused Builder",
             ]}
             typingSpeed={70}

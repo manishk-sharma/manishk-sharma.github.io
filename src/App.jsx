@@ -11,11 +11,9 @@ import { useEffect, useState } from "react";
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
-  const [isDark, setIsDark] = useState(
-    window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-  );
+  const [isDark, setIsDark] = useState(false);
 
-  // Sync theme class and system theme changes
+  // Sync theme class
   useEffect(() => {
     if (!isDark) {
       document.documentElement.classList.add("light");
@@ -25,13 +23,6 @@ export default function App() {
       document.documentElement.classList.add("dark");
     }
   }, [isDark]);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = (e) => setIsDark(e.matches);
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
 
   // Theme Toggle Logic
   const toggleTheme = () => {
