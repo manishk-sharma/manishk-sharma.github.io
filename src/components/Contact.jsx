@@ -53,7 +53,7 @@ export default function Contact() {
           {/* Left Column */}
           <div className="space-y-6">
             {/* Get In Touch Card */}
-            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-none transition-all duration-300">
+            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-blue-500/10 transition-all duration-300">
               <h3 className="text-2xl font-bold mb-8 text-slate-900 dark:text-white">Get In Touch</h3>
 
               <div className="space-y-6">
@@ -97,19 +97,19 @@ export default function Contact() {
             </div>
 
             {/* Follow Me Card */}
-            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-none transition-all duration-300">
+            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-blue-500/10 transition-all duration-300">
               <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Follow Me</h3>
               <div className="flex gap-4">
-                <a href="https://linkedin.com/in/manishk-sharma" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-600 dark:text-slate-400 hover:text-white hover:bg-blue-600 dark:hover:bg-blue-500 hover:border-transparent dark:hover:border-transparent shadow-sm transition-all duration-300 hover:-translate-y-1">
+                <a href="https://linkedin.com/in/manishk-sharma" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 text-slate-600 dark:text-slate-400 hover:bg-[#0077B5]/10 hover:text-[#0077B5] transition-all duration-300 border border-slate-200 dark:border-zinc-800">
                   <FaLinkedin className="text-xl" />
                 </a>
-                <a href="https://github.com/manishk-sharma" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-600 dark:text-slate-400 hover:text-white hover:bg-slate-900 dark:hover:bg-slate-700 hover:border-transparent dark:hover:border-transparent shadow-sm transition-all duration-300 hover:-translate-y-1">
+                <a href="https://github.com/manishk-sharma" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 text-slate-600 dark:text-slate-400 hover:bg-[#333]/10 hover:text-[#333] dark:hover:text-white transition-all duration-300 border border-slate-200 dark:border-zinc-800">
                   <FaGithub className="text-xl" />
                 </a>
-                <a href="https://www.instagram.com/_.manisharma/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-600 dark:text-slate-400 hover:text-white hover:bg-pink-600 dark:hover:bg-pink-500 hover:border-transparent dark:hover:border-transparent shadow-sm transition-all duration-300 hover:-translate-y-1">
+                <a href="https://www.instagram.com/_.manisharma/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 text-slate-600 dark:text-slate-400 hover:bg-pink-500/10 hover:text-pink-500 transition-all duration-300 border border-slate-200 dark:border-zinc-800">
                   <FaInstagram className="text-xl" />
                 </a>
-                <a href="https://x.com/manishk_sharma1" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-600 dark:text-slate-400 hover:text-white hover:bg-slate-900 dark:hover:bg-slate-700 hover:border-transparent dark:hover:border-transparent shadow-sm transition-all duration-300 hover:-translate-y-1">
+                <a href="https://x.com/manishk_sharma1" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center bg-slate-100 dark:bg-zinc-900 text-slate-600 dark:text-slate-400 hover:bg-black/10 dark:hover:bg-white/10 hover:text-black dark:hover:text-white transition-all duration-300 border border-slate-200 dark:border-zinc-800">
                   <FaXTwitter className="text-xl" />
                 </a>
               </div>
@@ -119,7 +119,7 @@ export default function Contact() {
           {/* Right Column */}
           <div className="space-y-6">
             {/* Ready to collaborate Card */}
-            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-none transition-all duration-300 text-center">
+            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-blue-500/10 transition-all duration-300 text-center">
               <div className="w-20 h-20 mx-auto bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20">
                 <FiMail className="w-10 h-10 text-white" />
               </div>
@@ -131,11 +131,11 @@ export default function Contact() {
               </p>
 
               <div className="space-y-3">
-                <a href="mailto:manish1182003@gmail.com" className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold flex items-center justify-center gap-2 group text-base transition-all shadow-md shadow-blue-600/10 hover:-translate-y-0.5">
+                <a href="mailto:manish1182003@gmail.com" className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold flex items-center justify-center gap-2 group transition-all shadow-md shadow-blue-600/10 hover:-translate-y-0.5">
                   <FiMail className="w-5 h-5" />
                   Send me an email
                 </a>
-                <a href="tel:+919990830656" className="w-full py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 font-semibold flex items-center justify-center gap-2 transition-all hover:-translate-y-0.5">
+                <a href="tel:+919990830656" className="w-full py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50 font-semibold flex items-center justify-center gap-2 transition-all hover:-translate-y-0.5">
                   <FiPhone className="w-5 h-5" />
                   Give me a call
                 </a>
@@ -143,12 +143,12 @@ export default function Contact() {
             </div>
 
             {/* Resume Card */}
-            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-none transition-all duration-300 text-center">
+            <div className="bg-white dark:bg-[#09090b] rounded-2xl p-8 border border-slate-200 dark:border-zinc-800/80 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-blue-500/10 transition-all duration-300">
               <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">Want to know more?</h3>
               <p className="text-slate-500 dark:text-slate-400 text-sm font-medium mb-6">
                 Download my resume to see my complete work history and projects.
               </p>
-              <a href="https://drive.google.com/file/d/1q1zHvW4TPPn-ET75y_NRJdlKqQWwje-B"
+              <a href="https://drive.google.com/file/d/1q1zHvW4TPPn-ET75y_NRJdlKqQWwje-B/view?usp=sharing"
                 target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-600/10 hover:-translate-y-0.5">
                 <FiDownload className="w-5 h-5" />
                 Download Resume
@@ -170,7 +170,7 @@ export default function Contact() {
                   <label className="text-sm font-semibold text-slate-500 dark:text-slate-400 ml-1">Your Name</label>
                   <input
                     name="name"
-                    className="w-full px-5 py-4 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 dark:focus:ring-blue-500/10 transition-all duration-300"
+                    className="w-full px-5 py-4 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"
                     placeholder="Your Name"
                     required
                   />
@@ -180,7 +180,7 @@ export default function Contact() {
                   <input
                     name="email"
                     type="email"
-                    className="w-full px-5 py-4 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 dark:focus:ring-blue-500/10 transition-all duration-300"
+                    className="w-full px-5 py-4 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"
                     placeholder="your@example.com"
                     required
                   />
@@ -191,7 +191,8 @@ export default function Contact() {
                 <label className="text-sm font-semibold text-slate-500 dark:text-slate-400 ml-1">Your Message</label>
                 <textarea
                   name="message"
-                  className="w-full px-5 py-4 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 dark:focus:ring-blue-500/10 transition-all duration-300 min-h-[150px]"
+                  className="w-full px-5 py-4 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800/80 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all resize-none"
+                  rows="5"
                   placeholder="Hi, I'd like to discuss a project..."
                   required
                 ></textarea>
