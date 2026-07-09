@@ -148,7 +148,7 @@ export default function Contact() {
               <p className="text-slate-500 dark:text-slate-400 text-sm font-medium mb-6">
                 Download my resume to see my complete work history and projects.
               </p>
-              <a href="https://drive.google.com/file/d/1q1zHvW4TPPn-ET75y_NRJdlKqQWwje-B/view?usp=sharing"
+              <a href="https://drive.google.com/file/d/1bG7z3Y05bF86Q3UpskF-UdhKxW36nF4e/view?usp=sharing"
                 target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-600/10 hover:-translate-y-0.5">
                 <FiDownload className="w-5 h-5" />
                 Download Resume
